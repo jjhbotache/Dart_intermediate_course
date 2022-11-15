@@ -8,6 +8,7 @@ void main(List<String> args) {
   myCode.sayHello("juanito");
   print(myCode.people);
 
+  // this is how to encode something
   String greet = "hello world";
   var ebytes = utf8.encode(greet);
   String encodedGreet = base64Encode(ebytes);
