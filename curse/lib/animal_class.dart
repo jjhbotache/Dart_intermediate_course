@@ -1,7 +1,7 @@
 class animal {
   String _name = "";
 
-  // this is the constructor
+  // this is the constructor (has the same name of the class an has not void keyword)
   animal(String name) {
     print("animal was created ");
     _name = name;

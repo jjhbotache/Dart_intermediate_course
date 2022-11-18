@@ -9,8 +9,13 @@ void main(List<String> args) {
   print(myCode.people);
 
   // this is how to encode something
+  // this is not a form of encription
   String greet = "hello world";
   var ebytes = utf8.encode(greet);
   String encodedGreet = base64Encode(ebytes);
-  print(encodedGreet);
+  print("Encoded: ${encodedGreet}");
+
+  List<int> dbytes = base64Decode(encodedGreet);
+  String decodedGreet = utf8.decode(dbytes);
+  print("Decoded: $decodedGreet");
 }
